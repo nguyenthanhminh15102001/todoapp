@@ -1,15 +1,7 @@
 "use client"
 import React from "react";
-import { Input,Button ,IconButton } from "@material-tailwind/react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendar } from '@fortawesome/free-solid-svg-icons'
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormHelperText from '@mui/material/FormHelperText';
-import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
 import Filter from "./components/Filter";
-import Search from "./components/Search";
+import Form from "./components/Form";
 import Todo from "./components/Todo";
 
 export default function Home() {
@@ -26,7 +18,7 @@ export default function Home() {
                 <h1 className='text-5xl font-bold  text-green-400'>My Todolist</h1>
               </div>
               <div className='content-box my-4 py-4 px-7 '>
-                  <Search/>
+                  <Form/>
                   <div class="h-px my-4 bg-gray-200 border-0 "></div>
                   <Filter/>
                  <div className='todo-box'> 
